@@ -20,10 +20,6 @@ print("--------------------")
 
 
 #how many total missin values do we have in percentage?
-import numpy as np
-import pandas as pd
-
-# Assuming 'data' is your DataFrame
 total_cells = np.prod(data.shape)
 print(total_cells)
 
