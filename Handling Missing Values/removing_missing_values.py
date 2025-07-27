@@ -16,7 +16,16 @@ print("--------------------------")
 #Drop missing values:
 x = data.dropna()
 print(x.head())  #looks like whole dataset is gone empy as each row had at least one null value
+print("--------------------------")
+
 
 
 columns_with_na_dropped = data.dropna(axis= 1)
 print(columns_with_na_dropped.head())
+print("--------------------------")
+
+
+#how much data we have lost:
+print(f"Columns in original dataset: {data.shape[1]} columns")
+print(f"Columns in original dataset: {columns_with_na_dropped.shape[1]} columns")
+print("--------------------------")
